@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.box {
+    background: #fff;
+    padding: 30px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    margin-bottom: 10px;
+    color: #0056c7;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f8f8f8;
+}
+
+.team h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.team-card {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-card h4 {
+    margin: 10px 0 5px;
+}
+
+.team-card p {
+    color: #666;
+}
+
+/* ----------------------------- */
+/*       MEDIA QUERIES          */
+/* ----------------------------- */
+
+@media (max-width: 900px) {
+    .about-section,
+    .mission-vision {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
